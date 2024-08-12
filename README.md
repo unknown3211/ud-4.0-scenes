@@ -6,7 +6,7 @@
 
  ~ No Reselling ~
 
- NPM I, NPM RUN BUILD
+ NPM I, NPM RUN BUILD: https://streamable.com/c23liw
 
  Discord: https://discord.gg/S6TKAjDn3y
  Dependancy: https://github.com/unknown3211/ud-laser

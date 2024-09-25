@@ -76,7 +76,7 @@ const App: React.FC = () => {
       <div className="wrapperTextbox">
         <div className="inputsTextbox">
           <div className="rowTextBox">
-          <div className="iconBox"><FaPencilAlt className="iconTextBox" /></div>
+            <div className="iconBox"><FaPencilAlt className="iconTextBox" /></div>
             <div className="inputTextbox">
               <div className="label">Text ({wordsRemaining} remaining)</div>
               <input className="inputText" type="text" placeholder="Text" value={text} onChange={handleWordsRemaining} />
@@ -86,11 +86,11 @@ const App: React.FC = () => {
             <div className="inputTextbox">
               <div className="label">Color</div>
               <div className="settings-dropdown" onClick={toggleDropdown}>
-              <input className="np-text-box" type="text" readOnly placeholder="Select item..." value={selectedColor} />
+                <input className="np-text-box" type="text" readOnly placeholder="Select item..." value={selectedColor} />
                 {dropdownVisible && (
                   <div className="optionsSelect">
                     {colors.map((color, index) => (
-                      <div key={index} onClick={() => handleColorShit(color)}>{color}</div>
+                      <div key={index} className="dropdown-item" onClick={() => handleColorShit(color)}>{color}</div>
                     ))}
                   </div>
                 )}
@@ -101,11 +101,11 @@ const App: React.FC = () => {
             <div className="inputTextbox">
               <div className="label">Font</div>
               <div className="settings-dropdown" onClick={toggleFontDropdown}>
-              <input className="np-text-box" type="text" readOnly placeholder="Select font..." value={selectedFont} />
+                <input className="np-text-box" type="text" readOnly placeholder="Select font..." value={selectedFont} />
                 {fontDropdownVisible && (
                   <div className="optionsSelect">
                     {fonts.map((font, index) => (
-                      <div key={index} onClick={() => handleFontShit(font)}>{font}</div>
+                      <div key={index} className="dropdown-item" onClick={() => handleFontShit(font)}>{font}</div>
                     ))}
                   </div>
                 )}
@@ -129,7 +129,7 @@ const App: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className="buttonTextbox"onClick={PlaceSceneEvent}>Submit</div>
+        <div className="buttonTextbox" onClick={PlaceSceneEvent}>Submit</div>
       </div>
       <input className="input-field" tabIndex={-1} /><input className="input-field" tabIndex={0} />
     </div>

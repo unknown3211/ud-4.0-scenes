@@ -904,7 +904,6 @@ video {
   vertical-align: baseline;
 }
 
-/* HTML5 display-role reset for older browsers */
 article,
 aside,
 details,
@@ -1525,6 +1524,16 @@ p {
   color: #fff;
 }
 
+.settings-dropdown .optionsSelect .dropdown-item {
+  padding: 0.5vh 1vh;
+  cursor: pointer;
+}
+
+.settings-dropdown .optionsSelect .dropdown-item:hover {
+  background: rgba(0, 248, 185, 0.15);
+  color: #fff;
+}
+
 .settings-dropdown::before {
   content: "";
   position: absolute;
@@ -1670,10 +1679,6 @@ p {
   user-select: none;
 }
 
-.buttonTextbox:hover {
+.settings-dropdown:hover {
   background: rgba(0, 248, 185, 0.24);
-}
-
-.settings-dropdown {
-  cursor: pointer;
 }

@@ -357,7 +357,6 @@
   border: 0 !important;
 }
 
-/* Buttons */
 .rdp-button_reset {
   appearance: none;
   position: relative;
@@ -373,7 +372,6 @@
 }
 
 .rdp-button_reset:focus-visible {
-  /* Make sure to reset outline only when :focus-visible is supported */
   outline: none;
 }
 
@@ -489,10 +487,6 @@
   border-radius: 100%;
 }
 
-/* ---------- */
-/* Dropdowns  */
-/* ---------- */
-
 .rdp-dropdown_year,
 .rdp-dropdown_month {
   position: relative;
@@ -606,7 +600,6 @@
 }
 
 .rdp-day_selected:focus-visible {
-  /* Since the background is the same use again the outline */
   outline: var(--rdp-outline);
   outline-offset: 2px;
   z-index: 1;
@@ -945,7 +938,6 @@ table {
   border-spacing: 0;
 }
 
-/* Fixes process.env iframe error window blocking all pointer events */
 body>iframe {
   pointer-events: none;
 }
@@ -1216,6 +1208,10 @@ p {
 .settings-dropdown .active div:hover {
   background: rgba(0, 248, 185, 0.15);
   color: #fff;
+}
+
+.settings-dropdown:hover {
+  background: rgba(0, 248, 185, 0.24);
 }
 
 .settings-dropdown::before {
@@ -1677,8 +1673,4 @@ p {
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   user-select: none;
-}
-
-.settings-dropdown:hover {
-  background: rgba(0, 248, 185, 0.24);
 }
